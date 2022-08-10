@@ -1,0 +1,41 @@
+{
+    "name": "greatatoo/laravel-basic",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/greatatoo/laravel-basic",
+    "keywords": ["Laravel", "LaravelBasic"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Greatatoo\\LaravelBasic\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Greatatoo\\LaravelBasic\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Greatatoo\\LaravelBasic\\LaravelBasicServiceProvider"
+            ],
+            "aliases": {
+                "LaravelBasic": "Greatatoo\\LaravelBasic\\Facades\\LaravelBasic"
+            }
+        }
+    }
+}
